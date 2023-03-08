@@ -35,5 +35,21 @@ list = ["Apple", "Orange", "Banana", "Grape"]
 #     print("I'm full stomach")
     
     
-for i in range(5, 20, 3):
-    print(i)
+# for i in range(5, 20, 3):
+#     print(i)
+    
+
+# for i, name in enumerate(list):
+#     print("index:" + str(i), name)
+
+# for name in enumerate(list, 1):
+#     print(name)
+    
+# for _, name in enumerate(list):
+#     print(name)
+    
+dictionary = {}
+for i, name in enumerate(list, 1):
+    dictionary[i] = name
+    
+print(dictionary)
