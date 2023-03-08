@@ -40,7 +40,8 @@ list = ["Apple", "Orange", "Banana", "Grape"]
     
 
 # for i, name in enumerate(list):
-#     print("index:" + str(i), name)
+    # print("index:" + str(i), name)
+    # print(f"index: {str(i)} {name}")
 
 # for name in enumerate(list, 1):
 #     print(name)
@@ -48,8 +49,40 @@ list = ["Apple", "Orange", "Banana", "Grape"]
 # for _, name in enumerate(list):
 #     print(name)
     
-dictionary = {}
-for i, name in enumerate(list, 1):
-    dictionary[i] = name
+# dictionary = {}
+# for i, name in enumerate(list, 1):
+#     dictionary[i] = name
     
-print(dictionary)
+# print(dictionary)
+# ------------------------
+
+list_taste = ["toobad", "good", "excelent", "normal"]
+
+
+# for name, taste in zip(list, list_taste):
+#     print(name, taste)
+
+# ---------------------------------------------
+
+list_cost = [100, 150, 50, 200]
+
+
+# for name, taste, cost in zip(list, list_taste, list_cost):
+#     print(f"{name} taste:{taste} cost:{cost}yen")
+    
+# -----------------------------------------------
+
+squares = [i**2 for i in range(5)]
+print(squares)
+
+odds = [i for i in range(10) if i % 2 == 1]
+print(odds)
+
+multiple3 = [i*3 for i in range(10)]
+print(multiple3)
+
+odd_even = ["odd" if i % 2 == 1 else "even" for i in range(10)]
+print(odd_even)
+
+nabeatsu = [i for i in range(50) if not i % 3 == 0]
+print(nabeatsu)
