@@ -17,7 +17,7 @@ print(num_list)
 # ------------------------------
 
 # クラス練習
-class Football_Team:
+class FootballTeam:
     def __init__(self, name, win, lose, draw):
         self.name = name
         self.win = win
@@ -32,13 +32,13 @@ class Football_Team:
         print(f"{self.name:14} W:{self.win:>3}  L:{self.lose:>3}  D:{self.draw:>3}  R:{self.culc_win_rate():.3f}")
 
 
-brazil = Football_Team('Brazil', 73, 18, 18)
-italy = Football_Team('Italy', 45, 21, 21)
-argentina = Football_Team('Argentina', 43, 15, 15)
-west_germany = Football_Team('West_Germany', 36, 14, 14)
-france = Football_Team('France', 34, 13, 13)
-germany = Football_Team('Germany', 31, 6, 6)
-spain = Football_Team('Spain', 30, 15, 15)
+brazil = FootballTeam('Brazil', 73, 18, 18)
+italy = FootballTeam('Italy', 45, 21, 21)
+argentina = FootballTeam('Argentina', 43, 15, 15)
+west_germany = FootballTeam('West_Germany', 36, 14, 14)
+france = FootballTeam('France', 34, 13, 13)
+germany = FootballTeam('Germany', 31, 6, 6)
+spain = FootballTeam('Spain', 30, 15, 15)
 
 teams = [brazil, italy, argentina, west_germany, france, germany, spain]
 for team in teams:
